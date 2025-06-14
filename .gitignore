@@ -1,0 +1,14 @@
+*.jar
+*.war
+*.ear
+*.tar.gz
+*.zip
+*.tgz
+*.log
+.terraform
+.terraform*
+tfplan.*.txt
+tfapply.*.txt
+*.tfstate
+*.tfstate.*
+version.auto.tfvars
