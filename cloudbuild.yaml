@@ -1,9 +1,9 @@
 steps:
-  - name: 'gcr.io/cloud-builders/terraform'
+  - name: 'hashicorp/terraform:1.5'
     args: ['init']
-  - name: 'gcr.io/cloud-builders/terraform'
+  - name: 'hashicorp/terraform:1.5'
     args: ['plan']
-  - name: 'gcr.io/cloud-builders/terraform'
+  - name: 'hashicorp/terraform:1.5'
     args: ['apply', '-auto-approve']
 options:
  logging : CLOUD_LOGGING_ONLY
