@@ -7,4 +7,3 @@ steps:
     args: ['apply', '-auto-approve']
 options:
  logging : CLOUD_LOGGING_ONLY
- serviceAccount : 'projects/dev-gcp-project-465215/serviceAccounts/cloudbuild-vm-mig@dev-gcp-project-465215.iam.gserviceaccount.com'
