@@ -1,0 +1,17 @@
+# cloudbuild.yaml
+steps:
+  - name: 'gcr.io/cloud-builders/git'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo "Cloning repo..."
+        git clone https://github.com/your-username/your-repo.git
+
+steps:
+  - name: 'gcr.io/cloud-builders/terraform'
+    args: ['init']
+  - name: 'gcr.io/cloud-builders/terraform'
+    args: ['plan']
+  - name: 'gcr.io/cloud-builders/terraform'
+    args: ['apply', '-auto-approve']
