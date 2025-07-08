@@ -1,5 +1,4 @@
-project_id     = "your-gcp-project-id"
+project_id     = "dev-gcp-project-465215"
 region         = "us-central1"
 zone           = "us-central1-a"
-instance_name  = "demo-instance"
-
+instance_name  = "app"
