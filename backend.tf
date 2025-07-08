@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket  = "your-tf-state-bucket-name"
-    prefix  = "terraform/state"
+    bucket  = "tf-state-bucket"
+    prefix  = "terraform/vm-mig"
   }
 }
