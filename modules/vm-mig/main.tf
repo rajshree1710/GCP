@@ -1,4 +1,4 @@
-resource "google_compute_instance_template" "default" {
+resource "google_compute_instance_template" "demo" {
   name_prefix = "${var.instance_name}-template"
   project     = var.project_id
 
