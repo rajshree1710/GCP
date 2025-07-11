@@ -4,13 +4,13 @@ resource "google_compute_instance_template" "demo" {
   machine_type = "e2-medium"
   tags         = ["web"]
 
-    disks {
+    disk {
       boot  = true
       auto_delete = true
       source_image = "debian-cloud/debian-11"
     }
 
-    network_interfaces {
+    network_interface {
       network = "default"
       access_config {}
     }
