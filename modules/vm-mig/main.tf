@@ -1,17 +1,13 @@
 resource "google_compute_instance_template" "demo" {
   name_prefix = "${var.instance_name}-template"
   project     = var.project_id
-
-  properties {
-    machine_type = "e2-medium"
-    tags         = ["web"]
+  machine_type = "e2-medium"
+  tags         = ["web"]
 
     disks {
       boot  = true
       auto_delete = true
-      initialize_params {
-        image = "debian-cloud/debian-11"
-      }
+      source_image = "debian-cloud/debian-11"
     }
 
     network_interfaces {
@@ -23,7 +19,7 @@ resource "google_compute_instance_template" "demo" {
       #!/bin/bash
       echo "Hello, world!" > /var/www/html/index.html
     EOT
-  }
+
 }
 
 resource "google_compute_region_instance_group_manager" "mig" {
