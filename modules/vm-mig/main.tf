@@ -32,7 +32,7 @@ resource "google_compute_region_instance_group_manager" "mig" {
   region             = var.region
   project            = var.project_id
   version {
-    instance_template = google_compute_instance_template.default.self_link
+    instance_template = google_compute_instance_template.demo.self_link
   }
   target_size        = var.vm_count
 }
