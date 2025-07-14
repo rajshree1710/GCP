@@ -6,4 +6,9 @@ module "vm_mig" {
   instance_name  = var.instance_name
   vm_count       = var.vm_count
 }
+module "vpc" {
+  source     = "./modules/VPC"
+  project_id = var.project_id
+  region     = var.region
+}
 

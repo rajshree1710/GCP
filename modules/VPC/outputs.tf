@@ -1,3 +1,3 @@
 output "vpc_name" {
-       value = vpc.network_name
+       value = module.vpc.network_name
 }
