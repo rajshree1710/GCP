@@ -15,10 +15,6 @@ resource "google_compute_instance_template" "demo" {
       access_config {}
     }
 
-   service_account {
-    email  = "grafana-monitoring@dev-gcp-project-465215.iam.gserviceaccount.com"
-    scopes = ["https://www.googleapis.com/auth/cloud-platform"]
-  }
 
     metadata_startup_script = <<-EOT
       #!/bin/bash
