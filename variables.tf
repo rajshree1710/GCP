@@ -5,6 +5,6 @@ variable "zone"      {}
 variable "instance_name" {}
 variable "vm_count" {
   type    = number
-  default = 2
+  default = 0
 }
 
